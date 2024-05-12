@@ -12,6 +12,7 @@ export const newTask = async (req , res)=>{
 export const getAllTasks =async(req,res) =>{
         const tasks = await prisma.tasks.findMany ({})
           res.status(200).json({
-                message: "SUCESS GETTED ALL TASKS";
+                message: "SUCESS GETTED ALL TASKS",
+                tasks
           })
 }
