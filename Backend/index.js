@@ -8,3 +8,6 @@ app.use(cors())
 app.use(express.json())
 import taskRoute from './routes/taskRoute.js'
 app.use ('/', taskRoute)
+app.listen (port,()=>{
+        console.log(`listing on ${post}`)
+})
