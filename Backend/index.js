@@ -6,4 +6,5 @@ import cors from 'cors';
 app.use(cors())
 
 app.use(express.json())
-import taskRoute from './'
+import taskRoute from './routes/taskRoute.js'
+app.use ('/', taskRoute)
