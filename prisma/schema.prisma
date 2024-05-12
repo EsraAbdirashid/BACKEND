@@ -16,3 +16,8 @@ enum ROLES {
  admin
  user
 }
+
+model users{
+  id Int @default(autoincrement())
+  
+}
