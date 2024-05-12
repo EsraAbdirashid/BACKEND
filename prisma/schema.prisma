@@ -26,5 +26,10 @@ model users{
 }
 
 model tasks{
-  
+  taskId Int @id @default(autoincrement())
+  title String
+  description String
+  dueDate DateTime @default(now())
+  createdAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 }
