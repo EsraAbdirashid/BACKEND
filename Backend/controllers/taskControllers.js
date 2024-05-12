@@ -6,5 +6,6 @@ export const newTask = async (req , res)=>{
         const newTasks = await prisma.tasks.create({
                 data:{title,description}
         })
-        
+        res.status(201) .json ({message: "sucess addesd new task"})
 }
+
